@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+
+<world name="default">
+
+    <light type="directional" name="light">
+    <cast_shadows>true</cast_shadows>
+    <pose>0 0 10 0 0 0</pose>
+    <diffuse>0.8 0.8 0.8 1</diffuse>
+    <specular>0.2 0.2 0.2 1</specular>
+    <attenuation>
+      <range>1000</range>
+      <constant>0.9</constant>
+      <linear>0.01</linear>
+      <quadratic>0.001</quadratic>
+    </attenuation>
+    <direction>-0.5 0.1 -0.9</direction>
+  </light>
+
+    <!-- <light name="light1" type="directional">
+      <pose frame="">0 -1.26453 6 0 -0 0</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <direction>0.1 0.1 -0.9</direction>
+      <attenuation>
+        <range>20</range>
+        <constant>0.5</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <cast_shadows>0</cast_shadows>
+    </light>
+
+
+    <light name="light3" type="directional">
+      <pose frame="">3.9239 1.64974 4 0 1.2 0</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <direction>0.1 0.1 -0.9</direction>
+      <attenuation>
+        <range>20</range>
+        <constant>0.5</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <cast_shadows>0</cast_shadows>
+    </light> -->
+
+
+    <include>
+		<uri>model://ground_plane</uri>
+    <!-- <mesh filename="package://ur_description/meshes/pepsi/visual_meshes/visual.dae"/> -->
+		</include>
+
+    <include>
+		<uri>model://table</uri>
+		<pose>-1.0 0 0 0 0 1.550000</pose>
+		</include>
+
+		<include>
+		<uri>model://can_coke</uri>
+		<pose>-1.0 -0.160142 1.015200 0 0 0</pose>
+		</include>
+
+    <include>
+		<uri>model://tea_box</uri>
+		<pose>-1.0 0.0 1.015200 0 0 0</pose>
+		</include>
+
+    <include>
+		<uri>model://wood_cube_5cm</uri>
+		<pose>-1.0 0.15 2.000593 0 0 0</pose>
+		</include>
+
+    <include>
+		<uri>model://plastic_cup</uri>
+		<pose>-1.0 0.3 1.015200 0 0 0</pose>
+		</include>
+
+    
+	</world>
+</sdf>
